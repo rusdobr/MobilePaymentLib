@@ -22,4 +22,9 @@ public interface ITelephoneProviderIdent {
      * @return 
      */
     public PhoneMaskItem[] search (PhoneNumber number);
+    
+    /**
+     * @return PhoneProvider[]
+     */
+    public PhoneProvider[] getProviders();
 }

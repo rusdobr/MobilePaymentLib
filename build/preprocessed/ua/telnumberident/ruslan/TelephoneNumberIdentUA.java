@@ -87,4 +87,13 @@ public class TelephoneNumberIdentUA implements ITelephoneProviderIdent {
         System.arraycopy(masksList, 0, result, 0, amountFound);
         return result;
     }
+    /**
+     * @return PhoneProvider[]
+     */
+    public PhoneProvider[] getProviders() {
+        int amount = providersList.length;
+        PhoneProvider result[] = new PhoneProvider[amount];
+        System.arraycopy(providersList, 0, result, 0, amount);
+        return result;
+    }
 }
