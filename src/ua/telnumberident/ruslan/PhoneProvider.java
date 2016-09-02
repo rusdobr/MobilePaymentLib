@@ -11,9 +11,16 @@ package ua.telnumberident.ruslan;
  */
 public final class PhoneProvider {
     
+    public static final String VODAFONE = "Vodafone";
+    public static final String KIEVSTAR = "Kievstar";
+    public static final String LIFE = "Life";
+    public static final String UTEL = "Utel";
+    public static final String PEOPLENET = "PeopleNet";
+    public static final String INTERTELEKOM = "InterTelekom";
+    
     private final String value;
     
-    PhoneProvider(String value) {
+    public PhoneProvider(String value) {
         this.value = value;
     }
     

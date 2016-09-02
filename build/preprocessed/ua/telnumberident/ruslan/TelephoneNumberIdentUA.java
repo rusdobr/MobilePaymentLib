@@ -17,12 +17,12 @@ public class TelephoneNumberIdentUA implements ITelephoneProviderIdent {
     
     static private void initProvidersList(){
         if (providersList == null) {
-            PhoneProvider mts = new PhoneProvider("MTS");
-            PhoneProvider kievstar = new PhoneProvider("Kievstar");
-            PhoneProvider life = new PhoneProvider("Life");
-            PhoneProvider utel = new PhoneProvider("Utel");
-            PhoneProvider peopleNet = new PhoneProvider("PeopleNet");
-            PhoneProvider intertelekom = new PhoneProvider("InterTelekom");
+            PhoneProvider mts = new PhoneProvider(PhoneProvider.VODAFONE);
+            PhoneProvider kievstar = new PhoneProvider(PhoneProvider.KIEVSTAR);
+            PhoneProvider life = new PhoneProvider(PhoneProvider.LIFE);
+            PhoneProvider utel = new PhoneProvider(PhoneProvider.UTEL);
+            PhoneProvider peopleNet = new PhoneProvider(PhoneProvider.PEOPLENET);
+            PhoneProvider intertelekom = new PhoneProvider(PhoneProvider.INTERTELEKOM);
 
             PhoneProvider tmp[] = { mts, kievstar, life, utel, peopleNet, intertelekom};
             providersList = tmp;                        
