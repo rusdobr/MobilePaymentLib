@@ -20,7 +20,7 @@ public final class PhoneProvider {
     
     private final String value;
     
-    PhoneProvider(String value) {
+    public PhoneProvider(String value) {
         this.value = value;
     }
     
